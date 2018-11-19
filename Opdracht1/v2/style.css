@@ -1,0 +1,92 @@
+/* GENERAL STYLING */
+
+body {
+	padding-bottom: 4em;
+}
+
+
+
+/* HEADER STYLING */
+
+header {
+	padding: 2em 0 2em 0;
+}
+
+ul {
+	text-align: center;
+}
+
+li {
+	display: inline;
+}
+
+
+button {
+    padding: 1em;
+    border-radius: 0.5em;
+    margin: 0 1em;
+    border-style: none;
+}
+
+.btn-all {
+	background-color: grey;
+}
+
+.btn-geel {
+	background-color: yellow;
+}
+
+.btn-groen {
+	background-color: green;
+}
+
+.btn-rood {
+	background-color: red;
+}
+
+.btn-roze {
+	background-color: pink;
+}
+
+
+/* IMAGES  */
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: flex-start;
+}
+
+img {
+	width: 365px;
+}
+
+section {
+    margin: 0.5rem;
+}
+
+/* Javascript CSS aanpassingen */
+
+.hide {
+	opacity: 0;
+}
+
+
+.img-geel {
+	xopacity: 0;
+}
+
+.img-groen {
+	xopacity: 0;
+}
+
+.img-rood {
+	xopacity: 0;
+}
+
+.img-roze {
+	xopacity: 0;
+}
+
+
