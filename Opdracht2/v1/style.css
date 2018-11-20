@@ -1,0 +1,68 @@
+/* GENERAL STYLING */
+
+h1 {
+	text-align: center;
+}
+
+main {
+	display: flex;
+	flex-direction: row;
+}
+
+.btn-prev {
+	width: 10%;
+
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-next {
+	width: 10%;
+
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+	width: 80%;
+}
+
+
+section {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+
+	overflow: hidden;
+}
+
+img {
+    min-width: 100%;
+}
+
+
+
+/* Javascript CSS aanpassingen */
+
+
+/* Toont de afbeelding LINKS van de huidige */
+.move-left {
+	position: relative;
+	left: 0px;
+}
+
+
+/* Toont de afbeelding RECHTS van de huidige */
+.move-right {
+	position: relative;
+	left: -620px;
+}
+
+
+
+
+
+
+
