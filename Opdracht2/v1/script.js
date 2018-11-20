@@ -3,8 +3,8 @@
 var prev = document.querySelector('.prev');
 var next = document.querySelector('.next');
 
-var img2 = document.querySelector('.img2')
-console.log("img2", img2);
+var img = document.querySelectorAll('img')
+console.log("img", img);
 
 
 
@@ -12,13 +12,17 @@ console.log("img2", img2);
 //acties 
 
 next.addEventListener("click",function(){
-	img2.classList.add('move-right');
+	console.log(img.length);
+	for (var i = 0; i < img.length; i++) {
+		img[i].classList.add('move-right');
+		}
 	}
 )
 
 prev.addEventListener("click",function(){
-	img2.classList.remove('move-right');
-
-	img2.classList.add('move-left');
+	console.log(img.length);
+	for (var i = 0; i < img.length; i++) {
+		img[i].classList.remove('move-right');
+		}
 	}
 )
