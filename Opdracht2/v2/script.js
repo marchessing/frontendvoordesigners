@@ -40,7 +40,21 @@ carousel = (function(){
   prev.addEventListener('click', function(ev) {
     navigate(-1);
   });
+
+  document.onkeydown = function(event) {
+        switch (event.keyCode) {
+           case 37:
+                navigate(-1);
+              break;
+           case 39:
+                navigate(0); 
+              break;
+        }
+  };
   
   //zorgt dat de eerste foto/item getoond wordt
   navigate(0); 
 })();
+
+
+
