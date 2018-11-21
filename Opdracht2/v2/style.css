@@ -1,0 +1,72 @@
+
+header {
+  width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.buttons {
+    text-align: center;
+    padding-top: 20px;
+}
+
+button.prev {
+    padding: 12px 25px;
+    margin: 0px 10px;
+    border-style: none;
+    background-color: lightblue;
+}
+
+button.prev:hover {
+  background-color: #8bb2bf;
+}
+
+button.next {
+    padding: 12px 25px;
+    margin: 0px 10px;
+    border-style: none;
+    background-color: #8bc34a;
+}
+
+button.next:hover {
+  background-color: #74a63a;
+}
+
+.carouselbox {
+  width: 600px;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+.content {
+  margin: 0;
+  padding: 0;
+}
+.content li {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  text-align: center;
+}
+
+
+.active {
+  height: 530px;
+}
+.active li {
+  position: absolute;
+  top: 530px;
+
+  opacity: 0;
+  transform: scale(0);
+  transition: 1s;
+}
+
+.active li.current {
+  top: 80px;
+
+  opacity: 1;
+  transform: scale(1);
+  transform: 1s;
+}
