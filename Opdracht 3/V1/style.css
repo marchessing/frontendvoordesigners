@@ -1,0 +1,47 @@
+.container {
+	width: 300px;
+	height: 300px;
+	overflow: hidden;
+}
+
+.images {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+.image-box {
+	width: 300px;
+	height: 250px;
+
+	display: flex;
+	flex-direction: column;
+}
+
+
+/* Javascript classes toevoegen */
+
+.pos0 {
+	position: relative;
+	left: 0px;
+}
+
+.pos1 {
+	position: relative;
+	left: -300px;
+}
+
+.pos2 {
+	position: relative;
+	left: -600px;
+}
+
+.pos3 {
+	position: relative;
+	left: -900px;
+}
+
+.pos4 {
+	position: relative;
+	left: -1200px;
+}
