@@ -5,7 +5,7 @@
   var prev = box.querySelector('.prev');
   var items = box.querySelectorAll('.content li');
   var counter = 0; //houdt bij welke afbeelding er getoond wordt
-  var amount = items.length; //kijken hoeveel items er zijn
+  var amount = items.length; //kijken hoeveel items er zijn dus 4
   var current = items[0];
 
   //voeg de classa active toe aan container zodat deze gemanipuleerd kan worden

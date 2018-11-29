@@ -1,36 +1,50 @@
-var images = document.querySelector('.images');
+var frame = document.querySelector('.frame');
 var prev = document.querySelector('.prev');
 var next = document.querySelector('.next');
 
-var current = 3;
+var images = document.querySelectorAll('.frame .image-box'); // Telt het aantal images in de slider
+var counter = 0;
+var items = images.length; // Maakt een nummer van het aantal images
+var current = items[0]; //[0] zorgt ervoor dat het eerst item uit de serie wordt gepakt.
+
+console.log("Images", images);
+console.log("Aantal images in slider: ", items);
+console.log("Current: ", current);
+
+
 
 // Hier moet de counter komen
 
+function currentImage () {
+	//hier moet de current het image nummer uitgerekend worden.
 
+}
 
 
 
 // Switch statement die de classes toevoegd aan .images 
-switch (current) {
+// Hier moet nog een function voor geschreven worden.
+
+switch (counter) {
 	case 0:
-		images.classList.add('pos0');
-		console.log("current", current);
+		frame.classList.add('pos0');
+		console.log("counter", counter);
 		break;
 	case 1:
-		images.classList.add('pos1');
-		console.log("current", current);
+		frame.classList.add('pos1');
+		console.log("counter", counter);
 		break;
 	case 2:
-		images.classList.add('pos2');
-		console.log("current", current);
+		frame.classList.add('pos2');
+		console.log("counter", counter);
 		break;
 	case 3:
-		images.classList.add('pos3');
-		console.log("current", current);
+		frame.classList.add('pos3');
+		console.log("counter", counter);
 		break;
 	case 4:
-		images.classList.add('pos4');
-		console.log("current", current);
+		frame.classList.add('pos4');
+		console.log("counter", counter);
 		break;
 	default:
 		console.log("default is actief");
