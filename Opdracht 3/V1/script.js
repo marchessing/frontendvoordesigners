@@ -4,23 +4,17 @@ var next = document.querySelector('.next');
 
 var images = document.querySelectorAll('.frame .image-box'); // Telt het aantal images in de slider
 var counter = 0;
-var items = images.length; // Maakt een nummer van het aantal images
-var current = items[0]; //[0] zorgt ervoor dat het eerst item uit de serie wordt gepakt.
-
-console.log("Images", images);
-console.log("Aantal images in slider: ", items);
-console.log("Current: ", current);
 
 
 
 // Hier moet de counter komen
 
-function currentImage () {
-	//hier moet de current het image nummer uitgerekend worden.
 
-}
+next.addEventListener('click', function() {
+	counter +1;
+})
 
-
+console.log('counter: ', counter);
 
 // Switch statement die de classes toevoegd aan .images 
 // Hier moet nog een function voor geschreven worden.
