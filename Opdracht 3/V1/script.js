@@ -6,59 +6,67 @@ var images = document.querySelectorAll('.frame .image-box'); // Telt het aantal 
 var counter = 0;
 
 
-function imageSelector() {
-	console.log('counter:', counter);
-
-
-	// Switch statement die de classes toevoegd aan .images 
-	// Hier moet nog een function voor geschreven worden.
-
-	switch (counter) {
-		console.log('hier sttat een switch');
-
-		case 0:
-			frame.classList.add('pos0');
-			//console.log("counter", counter);
-			break;
-		case 1:
-			frame.classList.add('pos1');
-			//console.log("counter", counter);
-			break;
-		case 2:
-			frame.classList.add('pos2');
-			//console.log("counter", counter);
-			break;
-		case 3:
-			frame.classList.add('pos3');
-			//console.log("counter", counter);
-			break;
-		case 4:
-			frame.classList.add('pos4');
-			//console.log("counter", counter);
-			break;
-		default:
-			//console.log("default is actief");
-
-
-	};
-};
-
 
 // On-click actions +1 en -1 
 
 next.addEventListener('click', function() {
-	counter = counter + 1;
-	//console.log('counter: ', counter);
+	counter = counter + 1; //counter +=1
+	console.log("hoeveel zijn er ?", images.length)
+	if(counter > images.length-1){
+		counter = 0;
+	}
+
+	console.log('counter: ', counter);
+	imageSelector();
 });
 
 prev.addEventListener('click', function() {
 	counter = counter - 1;
-	//console.log('counter: ', counter);
+	if(counter < 0){
+		counter = 3;
+	}
+
+	console.log('counter: ', counter);
+	imageSelector();
 });
 
 
+// Hier komt de functie
+function imageSelector() {
+	clearclasses();
+	if (counter == 0) {
+		console.log('de counter staat op 0');
+		frame.classList.add('pos0');
+	}
+	else if (counter == 1) {
+		console.log('de counter staat op 1');
+		frame.classList.add('pos1');
+	}
+	else if (counter == 2) {
+		console.log('de counter staat op 2');
+		frame.classList.add('pos2');
+	}
+	else if (counter == 3) {
+		console.log('de counter staat op 3');
+		frame.classList.add('pos3');
+	}
+	else {
+		console.log('Er is hier geen afbeelding voor.')
+	}
 
-imageSelector();
+
+};
+
+function clearclasses(){
+		frame.classList.remove('pos0');
+		frame.classList.remove('pos1');
+		frame.classList.remove('pos2');
+		frame.classList.remove('pos3');
+		frame.classList.remove('pos4');
+}
+
+
+//imageSelector();
 
 
 
