@@ -58,42 +58,46 @@ function imageSelector() {
 // Hier komt de function voor de ARROw besturing
 
 document.onkeydown = function(event) {
-	console.log(event.keyCode);
+	clearclasses();
+	//console.log(event.keyCode);
 
-	if (counter == 0 && event.keyCode == 37) {
-		frame.classList.add('pos3');
-		console.log('0 naar 3');
-	}
-	else if (counter == 0 && event.keyCode == 39) {
-		frame.classList.add('pos1');
-		console.log('0 naar 1');
-	}
+	if (event.keyCode == 39) {
+		counter = counter + 1;
+		if(counter > images.length-1){
+			counter = 0;
+		}
+		console.log('counter:', counter);
 
-	else if (counter == 1 && event.keyCode == 37) {
-		frame.classList.add('pos0');
-		console.log('1 naar 0');
-	}
-	else if (counter == 1 && event.keyCode == 39) {
-		frame.classList.add('pos2');
-		console.log('1 naar 2');
-	}
+		switch (counter) {
+			case 0: frame.classList.add('pos0');
+			break;
+			case 1: frame.classList.add('pos1');
+			break;
+			case 2: frame.classList.add('pos2');
+			break;
+			case 3: frame.classList.add('pos3');
+			break;
 
-	else if (counter == 2 && event.keyCode == 37) {
-		frame.classList.add('pos1');
-		console.log('2 naar 1');
+		}
 	}
-	else if (counter == 2 && event.keyCode == 39) {
-		frame.classList.add('pos3');
-		console.log('2 naar 3');
-	}
+	else if (event.keyCode == 37) {
+		counter = counter - 1;
+		if(counter < 0){
+			counter = 3;
+		}
+		console.log('counter:', counter);
 
-	else if (counter == 3 && event.keyCode == 37) {
-		frame.classList.add('pos2');
-		console.log('3 naar 2');
-	}
-	else if (counter == 3 && event.keyCode == 39) {
-		frame.classList.add('pos0');
-		console.log('3 naar 0');
+		switch (counter) {
+			case 0: frame.classList.add('pos0');
+			break;
+			case 1: frame.classList.add('pos1');
+			break;
+			case 2: frame.classList.add('pos2');
+			break;
+			case 3: frame.classList.add('pos3');
+			break;
+
+		}
 	}
 }
 
