@@ -5,6 +5,9 @@ var next = document.querySelector('.next');
 var images = document.querySelectorAll('.frame .image-box'); // Telt het aantal images in de slider
 var counter = 0;
 
+var indicator = document.querySelectorAll('li');
+console.log('li aantal', indicator);
+
 
 
 // On-click actions +1 en -1 
@@ -17,6 +20,7 @@ next.addEventListener('click', function() {
 
 	console.log('counter: ', counter);
 	imageSelector();
+	currentImage();
 });
 
 prev.addEventListener('click', function() {
@@ -27,6 +31,7 @@ prev.addEventListener('click', function() {
 
 	console.log('counter: ', counter);
 	imageSelector();
+	currentImage();
 });
 
 
@@ -99,7 +104,28 @@ document.onkeydown = function(event) {
 
 		}
 	}
+	currentImage();
 }
+
+// Current image function
+
+function currentImage() {
+
+
+	if (counter == 0) {
+		indicator[0].classList.add('current');
+	}
+	else if (counter == 1) {
+		indicator[1].classList.add('current');
+	}
+	else if (counter == 2) {
+		indicator[2].classList.add('current');
+	}
+	else if (counter == 3) {
+		indicator[3].classList.add('current');
+	}
+}
+
 
 
 function clearclasses(){
@@ -108,10 +134,9 @@ function clearclasses(){
 		frame.classList.remove('pos2');
 		frame.classList.remove('pos3');
 		frame.classList.remove('pos4');
+
 }
 
-
-//imageSelector();
 
 
 

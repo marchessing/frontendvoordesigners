@@ -1,6 +1,6 @@
 .container {
-	width: 300px;
-	height: 300px;
+	width: 600px;
+	height: 600px;
 	overflow: hidden;
 }
 
@@ -12,11 +12,24 @@
 
 
 .image-box {
-	width: 300px;
-	height: 250px;
+	width: 600px;
+	height: 400px;
 
 	display: flex;
 	flex-direction: column;
+}
+
+ul {
+	display: flex;
+}
+
+li {
+	list-style: none;
+	padding: 0px 10px;
+}
+
+.current {
+	color: red;
 }
 
 
@@ -32,28 +45,28 @@
 
 .pos1 {
 	position: relative;
-	left: -300px;
+	left: -600px;
 
 	transition: all 1s ease 0.2s;
 }
 
 .pos2 {
 	position: relative;
-	left: -600px;
+	left: -1200px;
 
 	transition: all 1s ease 0.2s;
 }
 
 .pos3 {
 	position: relative;
-	left: -900px;
+	left: -1800px;
 
 	transition: all 1s ease 0.2s;
 }
 
 .pos4 {
 	position: relative;
-	left: -1200px;
+	left: -2400px;
 
 	transition: all 1s ease 0.2s;
 }
