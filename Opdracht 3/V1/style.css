@@ -1,6 +1,15 @@
+body {
+
+	height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .container {
 	width: 600px;
-	height: 600px;
+	height: 490px;
 	overflow: hidden;
 }
 
@@ -21,16 +30,54 @@
 
 ul {
 	display: flex;
+	padding: 0;
+	justify-content: center;
 }
 
 li {
 	list-style: none;
-	padding: 0px 10px;
+    padding: 0px 10px;
+    color: #eeeeee;
 }
 
 .current {
-	color: red;
+	color: #039be5;
 }
+
+button {
+	background-color: #03A9F4;
+	color: white;
+    border-style: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+}
+
+button:hover {
+	background-color: #039be5;
+	font-size: 15px;
+}
+
+button:focus {
+	outline: 0;
+}
+
+
+
+/*
+button.prev {
+    position: relative;
+    left: 10px;
+    top: -160px;
+}
+
+button.next {
+    position: relative;
+    right: -490px;
+    top: -160px;
+}
+*/
 
 
 /* Javascript classes toevoegen */
