@@ -113,15 +113,31 @@ function currentImage() {
 
 
 	if (counter == 0) {
+		indicator[1].classList.remove('current');
+		indicator[2].classList.remove('current');
+		indicator[3].classList.remove('current');
+
 		indicator[0].classList.add('current');
 	}
 	else if (counter == 1) {
+		indicator[0].classList.remove('current');
+		indicator[2].classList.remove('current');
+		indicator[3].classList.remove('current');
+
 		indicator[1].classList.add('current');
 	}
 	else if (counter == 2) {
+		indicator[1].classList.remove('current');
+		indicator[0].classList.remove('current');
+		indicator[3].classList.remove('current');
+
 		indicator[2].classList.add('current');
 	}
 	else if (counter == 3) {
+		indicator[1].classList.remove('current');
+		indicator[2].classList.remove('current');
+		indicator[0].classList.remove('current');
+
 		indicator[3].classList.add('current');
 	}
 }
@@ -134,7 +150,6 @@ function clearclasses(){
 		frame.classList.remove('pos2');
 		frame.classList.remove('pos3');
 		frame.classList.remove('pos4');
-
 }
 
 
