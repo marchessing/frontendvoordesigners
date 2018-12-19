@@ -14,9 +14,7 @@ request.send();
 request.onload = function() {
   var superHeroes = request.response;
   console.log("response",request.response);
-
   //Hier worden onderstaande functies gelezen
-  //populateHeader(superHeroes);
   showHeroes(superHeroes);
 }
 
@@ -49,3 +47,6 @@ function showHeroes(jsonObj) {
   }
 
 }
+
+
+
