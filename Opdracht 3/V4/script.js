@@ -1,6 +1,6 @@
 
 var header = document.querySelector('header');
-var section = document.querySelector('section');
+var section = document.querySelector('.frame');
 
 // variabele die verwijst naar de locatie van de JSON data
 // var requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json';
@@ -26,19 +26,22 @@ function showHeroes(jsonObj) {
 
   for (var i = 0; i < heroes.length; i++) {
     var myArticle = document.createElement('article');
-    var myH2 = document.createElement('h2');
     var myCover = document.createElement('img');
+
+    var myH2 = document.createElement('h2');
     var myPara1 = document.createElement('p');
 
+    myCover.setAttribute('src', heroes[i].cover);
+    //myCover.textContent = heroes[i].cover;
+
     myH2.textContent = heroes[i].title;
-    myCover.textContent = heroes[i].cover;
     myPara1.textContent = 'Simple plot: ' + heroes[i].simple_plot;
-    console.log("myH2", myH2);
     console.log("myCover", myCover);
+    console.log("myH2", myH2);
     console.log("myPara1", myPara1);
 
-    myArticle.appendChild(myH2);
     myArticle.appendChild(myCover);
+    myArticle.appendChild(myH2);
     myArticle.appendChild(myPara1);
     console.log("myArticle",myArticle);
 
