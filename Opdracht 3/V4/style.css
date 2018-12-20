@@ -35,6 +35,21 @@ img {
 	height: 317px;
 }
 
+ul {
+	display: flex;
+	padding: 0;
+	justify-content: center;
+}
+
+li {
+	list-style: none;
+    padding: 0px 10px;
+    color: #eeeeee;
+}
+
+.current {
+	color: #039be5;
+}
 
 /* Javascript classes toevoegen */
 
