@@ -13,14 +13,14 @@ request.send();
 // Hier wordt de JSON extern opgehaald
 request.onload = function() {
   var superHeroes = request.response;
-  console.log("response",request.response);
+  // console.log("response",request.response);
   //Hier worden onderstaande functies gelezen
   showHeroes(superHeroes);
 }
 
 function showHeroes(jsonObj) {
   var heroes = jsonObj; // kan ik hier niet gewoon var superHeroes voor gebruiken?
-  console.log ("test", heroes);
+  // console.log ("test", heroes);
 
   for (var i = 0; i < heroes.length; i++) {
     var myArticle = document.createElement('article');
@@ -30,23 +30,28 @@ function showHeroes(jsonObj) {
     var myPara1 = document.createElement('p');
 
     myCover.setAttribute('src', heroes[i].cover);
-    //myCover.textContent = heroes[i].cover;
+    myArticle.setAttribute('class', 'image-box');// voegt de claas image-box toe aan article
 
     myH2.textContent = heroes[i].title;
     myPara1.textContent = 'Simple plot: ' + heroes[i].simple_plot;
-    console.log("myCover", myCover);
-    console.log("myH2", myH2);
-    console.log("myPara1", myPara1);
+    // console.log("myCover", myCover);
+    // console.log("myH2", myH2);
+    // console.log("myPara1", myPara1);
 
     myArticle.appendChild(myCover);
     myArticle.appendChild(myH2);
     myArticle.appendChild(myPara1);
-    console.log("myArticle",myArticle);
+    // console.log("myArticle",myArticle);
 
     section.appendChild(myArticle);
   }
 
 }
+
+
+var frame = document.querySelector('.frame');
+var prev = document.querySelector('.prev');
+var next = document.querySelector('.next');
 
 
 
