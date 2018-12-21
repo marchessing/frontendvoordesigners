@@ -1,0 +1,91 @@
+
+
+header {
+	width: 100%;
+	text-align: center;
+}
+
+.container {
+	width: 214px;
+	height: 520px;
+	overflow: hidden;
+	margin: auto;
+}
+
+.frame {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+article {
+	width: 214px;
+	height: 520px;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.btn {
+	text-align: center;
+}
+
+img {
+	width: 214px;
+	height: 317px;
+}
+
+ul {
+	display: flex;
+	padding: 0;
+	justify-content: center;
+}
+
+li {
+	list-style: none;
+    padding: 0px 10px;
+    color: #eeeeee;
+}
+
+.current {
+	color: #039be5;
+}
+
+/* Javascript classes toevoegen */
+
+.pos0 {
+	position: relative;
+	left: 0px;
+	/* transition: <property> <duration> <timing-function> <delay>; */
+	transition: all 1s ease 0.2s;
+}
+
+.pos1 {
+	position: relative;
+	left: -214px;
+	transition: all 1s ease 0.2s;
+}
+
+.pos2 {
+	position: relative;
+	left: -428px;
+	transition: all 1s ease 0.2s;
+}
+
+.pos3 {
+	position: relative;
+	left: -642px;
+	transition: all 1s ease 0.2s;
+}
+
+.pos4 {
+	position: relative;
+	left: -858px;
+	transition: all 1s ease 0.2s;
+}
+
+.pos5 {
+	position: relative;
+	left: -1072;
+	transition: all 1s ease 0.2s;
+}
