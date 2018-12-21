@@ -1,61 +1,48 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Opdracht 3</title>
+  <head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
 
-	<!-- stylesheet -->
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <title>Our superheroes</title>
 
-	<!-- fontAwesome -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  </head>
 
-</head>
-<body>
+  <body>
 
-	<section class="container">
+      <header>
+        <h1>Marc's movie list</h1>
+      </header>
 
-		<div class="frame">
+        <section class="container">
 
-			<div class="image-box">
-				<img src="img/natuur1.jpg">
-				<p>Foto van landschap met prachtige bomen en grasvlaktes.</p>
-			</div>
+          <div class="frame">
 
-			<div class="image-box">
-				<img src="img/natuur2.jpg">
-				<p>De meest prachtige waterval verschijning in een bos.</p>
-			</div>
+            <!-- Hier laden we de JSON data in -->
 
-			<div class="image-box">
-				<img src="img/natuur3.jpg">
-				<p>Dit is een surrealistisch blauw meer.</p>
-			</div>
+          </div>
 
-			<div class="image-box">
-				<img src="img/natuur4.jpg">
-				<p>Het bos van de engeltjes.</p>
-			</div>
+        </section>
 
-		</div>
+        <ul>
+            <li><i class="fas fa-circle"></i></li>
+            <li><i class="fas fa-circle"></i></li>
+            <li><i class="fas fa-circle"></i></li>
+            <li><i class="fas fa-circle"></i></li>
+            <li><i class="fas fa-circle"></i></li>
+            <li><i class="fas fa-circle"></i></li>
+        </ul>
 
-		<ul>
-			<li><i class="fas fa-circle"></i></li>
-			<li><i class="fas fa-circle"></i></li>
-			<li><i class="fas fa-circle"></i></li>
-			<li><i class="fas fa-circle"></i></li>
-		</ul>
+        <div class="btn">
+          <button class="prev">Previous</button>
+          <button class="next">Next</button>
+        </div>
 
-		<!--
-		<button class="prev"><i class="fas fa-arrow-alt-circle-left fa-3x"></i></button>
-		<button class="next"><i class="fas fa-arrow-alt-circle-right fa-3x"></i></button>
-		-->
-		<button class="prev">Previous</button>
-		<button class="next">Next</button>
+      <script type="text/javascript" src="script.js"></script>
+      <!-- <script type="text/javascript" src="slider.js"></script> -->
 
-	</section>
-
-	<!-- Javascript -->
-	<script type="text/javascript" src="script.js"></script>
-
-</body>
+  </body>
 </html>
